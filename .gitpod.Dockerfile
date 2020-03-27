@@ -1,4 +1,4 @@
-FROM gitpod/workspace-full as gitpod
+FROM gitpod/workspace-dotnet as gitpod
                     
 USER gitpod
 
