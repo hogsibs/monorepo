@@ -2,7 +2,9 @@ FROM gitpod/workspace-full as gitpod
                     
 USER gitpod
 
-RUN gcloud auth configure-docker && docker pull marketplace.gcr.io/google/bazel:latest
+FROM github/gcloud-auth
+
+RUN gcloud auth configure-docker
 
 FROM marketplace.gcr.io/google/bazel:latest as bazel
 
