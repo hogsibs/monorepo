@@ -2,12 +2,6 @@ FROM gitpod/workspace-full as gitpod
                     
 USER gitpod
 
-FROM github/gcloud-auth:master
-
-RUN gcloud auth configure-docker
-
-FROM marketplace.gcr.io/google/bazel:latest as bazel
-
 # Install custom tools, runtime, etc. using apt-get
 # For example, the command below would install "bastet" - a command line tetris clone:
 #
