@@ -2,7 +2,7 @@ FROM gitpod/workspace-full as gitpod
                     
 USER gitpod
 
-FROM github/gcloud-auth
+FROM github/gcloud-auth:master
 
 RUN gcloud auth configure-docker
 
