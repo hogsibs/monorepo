@@ -2,13 +2,14 @@ FROM gitpod/workspace-full as gitpod
                     
 USER gitpod
 
-RUN echo "deb [signed-by=/usr/share/keyrings/cloud.google.gpg] https://packages.cloud.google.com/apt cloud-sdk main" | sudo tee -a /etc/apt/sources.list.d/google-cloud-sdk.list
-RUN curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key --keyring /usr/share/keyrings/cloud.google.gpg add -
-RUN sudo apt-get update && sudo apt-get install google-cloud-sdk
-RUN gcloud init
-RUN gcloud auth configure-docker
+# Add Bazel distro URI
+RUN sudo apt install curl
+RUN curl https://bazel.build/bazel-release.pub.gpg | sudo apt-key add -
+RUN echo "deb [arch=amd64] https://storage.googleapis.com/bazel-apt stable jdk1.8" | sudo tee /etc/apt/sources.list.d/bazel.list
 
-FROM marketplace.gcr.io/google/bazel:latest as bazel
+# Install / update Bazel
+RUN sudo apt update && sudo apt install bazel
+
 # RUN sudo wget -P /tmp "https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-286.0.0-linux-x86_64.tar.gz"
 # RUN sudo mkdir /google-cloud-sdk
 # RUN sudo tar xvzf /tmp/google-cloud-sdk-286.0.0-linux-x86_64.tar.gz -C /google-cloud-sdk
