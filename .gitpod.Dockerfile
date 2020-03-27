@@ -1,4 +1,4 @@
-FROM gitpod/workspace-full
+FROM marketplace.gcr.io/google/bazel:latest
                     
 USER gitpod
 
