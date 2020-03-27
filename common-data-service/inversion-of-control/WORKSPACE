@@ -6,14 +6,10 @@ git_repository(
     tag = "0.0.3",
 )
 
-load("@io_bazel_rules_dotnet//dotnet:defs.bzl", "dotnet_register_toolchains", "dotnet_repositories", "net_register_sdk")
+load("@io_bazel_rules_dotnet//dotnet:defs.bzl", "dotnet_register_toolchains", "dotnet_repositories", "mono_register_sdk")
 
 dotnet_register_toolchains()
 
 dotnet_repositories()
 
-net_register_sdk(
-    "net472",
-    name = "net_sdk",
-    tools_version = "net472",
-)
+mono_register_sdk()

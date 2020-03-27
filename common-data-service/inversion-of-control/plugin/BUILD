@@ -1,6 +1,6 @@
-load("@io_bazel_rules_dotnet//dotnet:defs.bzl", "net_library")
+load("@io_bazel_rules_dotnet//dotnet:defs.bzl", "dotnet_library")
 
-net_library(
+dotnet_library(
     name = "foo_bar",
     srcs = [
         "bar.cs",
