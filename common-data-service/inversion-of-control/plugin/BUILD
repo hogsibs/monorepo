@@ -1,9 +1,13 @@
 load("@io_bazel_rules_dotnet//dotnet:defs.bzl", "dotnet_library")
 
-dotnet_library(
-    name = "foo_bar",
+net_library(
+    name = "plugin",
     srcs = [
-        "bar.cs",
-        "foo.cs",
+        "IPluginScope.cs",
+    ],
+    visibility = ["//visibility:public"],
+    deps = [
+        "//common-data-service/inversion-of-control/core",
+        "@microsoft.crmsdk.coreassemblies//:net462_net",
     ],
 )
