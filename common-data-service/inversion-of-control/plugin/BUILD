@@ -5,7 +5,9 @@ net_library(
     srcs = [
         "IPluginScope.cs",
     ],
+    visibility = ["//visibility:public"],
     deps = [
-        "//core",
+        "//common-data-service/inversion-of-control/core",
+        "@microsoft.crmsdk.coreassemblies//:net462_net",
     ],
 )
