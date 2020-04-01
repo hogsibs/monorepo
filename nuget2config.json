@@ -1,6 +1,0 @@
-﻿{
-  "externals": {},
-  "dependencies": {
-    "Microsoft.CrmSdk.CoreAssemblies": "9.0.2.24"
-  }
-}

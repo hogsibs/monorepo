@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29926.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "common-data-service", "common-data-service", "{7CEEB6B9-6A20-4C13-ADB5-11F323D73F36}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "inversion-of-control", "inversion-of-control", "{1454E93B-3EC7-40AB-8F1B-BF6CF0854214}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "plugin", "plugin", "{36E54D04-4057-4ED9-A252-C17FC0F0433A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hogsibs.CommonDataService.InversionOfControl.Plugin", "common-data-service\inversion-of-control\plugin\Hogsibs.CommonDataService.InversionOfControl.Plugin\Hogsibs.CommonDataService.InversionOfControl.Plugin.csproj", "{FA81743D-60A1-4D2A-BE42-2F3825A98944}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "core", "core", "{AC037788-1888-42C1-8B13-7D7DE174D088}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hogsibs.CommonDataService.InversionOfControl.Core", "common-data-service\inversion-of-control\core\Hogsibs.CommonDataService.InversionOfControl.Core\Hogsibs.CommonDataService.InversionOfControl.Core.csproj", "{1BAC04E2-69F1-4843-B39A-F15BBFCCC51A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FA81743D-60A1-4D2A-BE42-2F3825A98944}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA81743D-60A1-4D2A-BE42-2F3825A98944}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA81743D-60A1-4D2A-BE42-2F3825A98944}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA81743D-60A1-4D2A-BE42-2F3825A98944}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BAC04E2-69F1-4843-B39A-F15BBFCCC51A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BAC04E2-69F1-4843-B39A-F15BBFCCC51A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BAC04E2-69F1-4843-B39A-F15BBFCCC51A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BAC04E2-69F1-4843-B39A-F15BBFCCC51A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1454E93B-3EC7-40AB-8F1B-BF6CF0854214} = {7CEEB6B9-6A20-4C13-ADB5-11F323D73F36}
+		{36E54D04-4057-4ED9-A252-C17FC0F0433A} = {1454E93B-3EC7-40AB-8F1B-BF6CF0854214}
+		{FA81743D-60A1-4D2A-BE42-2F3825A98944} = {36E54D04-4057-4ED9-A252-C17FC0F0433A}
+		{AC037788-1888-42C1-8B13-7D7DE174D088} = {1454E93B-3EC7-40AB-8F1B-BF6CF0854214}
+		{1BAC04E2-69F1-4843-B39A-F15BBFCCC51A} = {AC037788-1888-42C1-8B13-7D7DE174D088}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7072A104-1C9C-4BF1-A6D3-8C16F969A3D7}
+	EndGlobalSection
+EndGlobal
